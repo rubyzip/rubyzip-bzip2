@@ -1,0 +1,9 @@
+.idea
+*.gem
+.bundle
+Gemfile.lock
+coverage
+pkg/
+.ruby-gemset
+.ruby-version
+/vendor/bundle

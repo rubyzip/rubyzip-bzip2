@@ -78,6 +78,6 @@ class Libbz2Test < MiniTest::Test
   end
 
   def compressed_data
-    @compressed_data ||= File.open(BZIP2_FILE, &:read)
+    @compressed_data ||= File.open(BZIP2_FILE, 'rb', &:read)
   end
 end

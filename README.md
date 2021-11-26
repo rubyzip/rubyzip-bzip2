@@ -32,6 +32,8 @@ Reading a zip file with bzip2 compression is not different from reading
 any other zip file using rubyzip:
 
 ```ruby
+require 'zip/bzip2'
+
 Zip::File.open('foo.zip') do |zipfile|
   zipfile.each do |entry|
     content = zipfile.read(entry.name)

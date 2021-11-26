@@ -1,7 +1,8 @@
 # rubyzip-bzip2
 
 [![Gem Version](https://badge.fury.io/rb/rubyzip-bzip2.svg)](http://badge.fury.io/rb/rubyzip-bzip2)
-[![Build Status](https://secure.travis-ci.org/rubyzip/rubyzip-bzip2.svg)](http://travis-ci.org/rubyzip/rubyzip-bzip2)
+[![Tests](https://github.com/rubyzip/rubyzip-bzip2/actions/workflows/tests.yml/badge.svg)](https://github.com/rubyzip/rubyzip-bzip2/actions/workflows/tests.yml)
+[![Linter](https://github.com/rubyzip/rubyzip-bzip2/actions/workflows/lint.yml/badge.svg)](https://github.com/rubyzip/rubyzip-bzip2/actions/workflows/lint.yml)
 [![Code Climate](https://codeclimate.com/github/rubyzip/rubyzip-bzip2.svg)](https://codeclimate.com/github/rubyzip/rubyzip-bzip2)
 [![Coverage Status](https://img.shields.io/coveralls/rubyzip/rubyzip-bzip2.svg)](https://coveralls.io/r/rubyzip/rubyzip-bzip2?branch=master)
 

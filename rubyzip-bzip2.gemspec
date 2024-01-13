@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
     'wiki_uri' => 'https://github.com/rubyzip/rubyzip-bzip2/wiki',
   }
 
-  spec.files = Dir.glob('{lib}/**/*.rb') + %w[README.md]
+  spec.files = Dir.glob('{lib}/**/*.rb') + %w[README.md LICENSE]
 
   spec.add_dependency 'ffi', '~> 1.0'
   spec.add_dependency 'rubyzip', '~> 2.2'

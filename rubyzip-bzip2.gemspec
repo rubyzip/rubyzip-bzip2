@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir.glob('{lib}/**/*.rb') + %w[README.md LICENSE]
 
   spec.add_dependency 'ffi', '~> 1.0'
-  spec.add_dependency 'rubyzip', '~> 2.2'
+  spec.add_dependency 'rubyzip', '~> 2.4', '< 3.0'
 
   spec.add_development_dependency 'minitest', '~> 5.4'
   spec.add_development_dependency 'rake', '~> 13.2'

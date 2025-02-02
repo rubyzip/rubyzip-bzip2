@@ -6,8 +6,7 @@
 [![Code Climate](https://codeclimate.com/github/rubyzip/rubyzip-bzip2.svg)](https://codeclimate.com/github/rubyzip/rubyzip-bzip2)
 [![Coverage Status](https://img.shields.io/coveralls/rubyzip/rubyzip-bzip2.svg)](https://coveralls.io/r/rubyzip/rubyzip-bzip2?branch=master)
 
-The rubyzip-bzip2 gem provides an extension of the rubyzip gem for reading zip files
-compressed with bzip2 compression.
+The rubyzip-bzip2 gem provides an extension of the rubyzip gem for reading zip files compressed with bzip2 compression.
 
 ## Website and Project Home
 http://github.com/rubyzip/rubyzip-bzip2
@@ -44,8 +43,7 @@ end
 ```
 
 ## License
-Rubyzip-bzip2 is distributed under the same license as ruby. See
-http://www.ruby-lang.org/en/LICENSE.txt
+Rubyzip-bzip2 is distributed under the same license as Ruby. In practice this means you can use it under the terms of the Ruby License or the 2-Clause BSD License. See https://www.ruby-lang.org/en/about/license.txt and LICENSE.md for details.
 
 ## Contributing
 Bug reports and pull requests are welcome on GitHub at https://github.com/rubyzip/rubyzip-bzip2.
@@ -59,4 +57,14 @@ rake
 ```
 
 ## Authors
+
+See https://github.com/rubyzip/rubyzip-bzip2/graphs/contributors for a comprehensive list.
+
+### Current maintainers
+
+* Robert Haines (@hainesr)
+* John Lees-Miller (@jdleesmiller)
+* Oleksandr Simonov (@simonoff)
+
+### Original author
 Jan-Joost Spanjers ( oss at hiberis.nl )

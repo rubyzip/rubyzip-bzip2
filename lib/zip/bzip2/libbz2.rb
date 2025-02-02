@@ -7,9 +7,9 @@ require 'zip/bzip2/ffi/libbz2'
 module Zip
   module Bzip2
     class Libbz2 #:nodoc:
-      def self.finalizer
+      def self.finalizer(stream)
         lambda do |_id|
-          decompress_end
+          FFI::Libbz2::BZ2_bzDecompressEnd(stream)
         end
       end
       private_class_method :finalizer
@@ -32,7 +32,7 @@ module Zip
         result = FFI::Libbz2::BZ2_bzDecompressInit(@stream, 0, small ? 1 : 0)
         check_error(result)
 
-        ObjectSpace.define_finalizer(self, self.class.send(:finalizer))
+        ObjectSpace.define_finalizer(self, self.class.send(:finalizer, @stream))
 
         true
       end

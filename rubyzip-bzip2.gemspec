@@ -17,8 +17,13 @@ Gem::Specification.new do |spec|
     'for reading zip files compressed with bzip2 compression'
   spec.homepage = 'http://github.com/rubyzip/rubyzip-bzip2'
   spec.license = 'BSD 2-Clause'
+  spec.require_paths = ['lib']
 
   spec.required_ruby_version = '>= 2.4'
+
+  spec.files = `git ls-files -z`.split("\x0").reject do |f|
+    f.match(%r{^(test|spec|features)/})
+  end
 
   spec.metadata = {
     'bug_tracker_uri' => 'https://github.com/rubyzip/rubyzip-bzip2/issues',
@@ -28,8 +33,6 @@ Gem::Specification.new do |spec|
     'wiki_uri' => 'https://github.com/rubyzip/rubyzip-bzip2/wiki',
     'rubygems_mfa_required' => 'true'
   }
-
-  spec.files = Dir.glob('{lib}/**/*.rb') + %w[README.md LICENSE]
 
   spec.add_dependency 'ffi', '~> 1.0'
   spec.add_dependency 'rubyzip', '~> 2.4', '< 3.0'

@@ -26,6 +26,7 @@ Gem::Specification.new do |spec|
     'documentation_uri' => "https://www.rubydoc.info/gems/rubyzip-bzip2/#{spec.version}",
     'source_code_uri' => "https://github.com/rubyzip/rubyzip-bzip2/tree/v#{spec.version}",
     'wiki_uri' => 'https://github.com/rubyzip/rubyzip-bzip2/wiki',
+    'rubygems_mfa_required' => 'true'
   }
 
   spec.files = Dir.glob('{lib}/**/*.rb') + %w[README.md LICENSE]

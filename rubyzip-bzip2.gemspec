@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.name = 'rubyzip-bzip2'
   spec.version = ::Zip::Bzip2::VERSION
   spec.authors = [
-    'Jan-Joost Spanjers',
+    'Jan-Joost Spanjers', 'Robert Haines'
   ]
 
   spec.summary = 'Extension of rubyzip to read bzip2 compressed files'

@@ -17,6 +17,8 @@
 * Update MiniTest dependency.
 * Add a test to ensure correct version number format.
 * Add `bin/console'.
+* Require MFA for RubyGems operations.
+* Tighten-up RuboCop configuration.
 
 # 0.0.1
 

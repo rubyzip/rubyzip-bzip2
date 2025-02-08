@@ -29,7 +29,7 @@ module Zip #:nodoc:
       private
 
       def return_value_on_eof(length)
-        return '' if length.nil? || length.zero?
+        '' if length.nil? || length.zero?
       end
 
       def fill_buffer(min_length)

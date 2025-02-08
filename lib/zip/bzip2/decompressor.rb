@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
-require 'zip'
-require 'zip/bzip2/decompress'
+require_relative 'decompress'
 
 module Zip #:nodoc:
   module Bzip2

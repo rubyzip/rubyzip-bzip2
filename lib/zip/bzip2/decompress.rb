@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'zip/bzip2/libbz2'
+require_relative 'libbz2'
 
 module Zip
   module Bzip2

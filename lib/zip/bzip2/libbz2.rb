@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
-require 'ffi'
-require 'zip/bzip2/errors'
-require 'zip/bzip2/ffi/libbz2'
+require_relative 'errors'
+require_relative 'ffi/libbz2'
 
 module Zip
   module Bzip2

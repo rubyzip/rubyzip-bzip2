@@ -11,7 +11,7 @@ module Zip
       # Initializes a new instance of MemError.
       #
       # @private
-      def initialize #:nodoc:
+      def initialize # :nodoc:
         super('Could not allocate enough memory to perform this request')
       end
     end
@@ -23,7 +23,7 @@ module Zip
       #
       # @param message [String] Exception message (overrides the default).
       # @private
-      def initialize(message = nil) #:nodoc:
+      def initialize(message = nil) # :nodoc:
         super(
           message ||
             'Data integrity error detected (mismatch between stored and computed CRCs, ' \
@@ -38,7 +38,7 @@ module Zip
       # Initializes a new instance of MagicDataError.
       #
       # @private
-      def initialize #:nodoc:
+      def initialize # :nodoc:
         super('Compressed data does not start with the correct magic bytes (\'BZh\')')
       end
     end
@@ -48,7 +48,7 @@ module Zip
       # Initializes a new instance of ConfigError.
       #
       # @private
-      def initialize #:nodoc:
+      def initialize # :nodoc:
         super('libbz2 has been improperly compiled on your platform')
       end
     end
@@ -59,7 +59,7 @@ module Zip
       #
       # @param error_code [Integer] The error_code reported by libbz2.
       # @private
-      def initialize(error_code) #:nodoc:
+      def initialize(error_code) # :nodoc:
         super("An unexpected error was detected (error code: #{error_code})")
       end
     end

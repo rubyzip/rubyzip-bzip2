@@ -5,7 +5,7 @@ require_relative 'ffi/libbz2'
 
 module Zip
   module Bzip2
-    class Libbz2 #:nodoc:
+    class Libbz2 # :nodoc:
       def self.finalizer(stream)
         lambda do |_id|
           FFI::Libbz2::BZ2_bzDecompressEnd(stream)

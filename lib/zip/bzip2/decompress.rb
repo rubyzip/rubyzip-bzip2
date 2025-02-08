@@ -4,7 +4,7 @@ require_relative 'libbz2'
 
 module Zip
   module Bzip2
-    class Decompress #:nodoc:
+    class Decompress # :nodoc:
       OUTPUT_BUFFER_SIZE = 4096
 
       def initialize(options = {})

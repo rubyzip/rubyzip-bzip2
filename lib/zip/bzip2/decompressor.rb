@@ -2,9 +2,9 @@
 
 require_relative 'decompress'
 
-module Zip #:nodoc:
+module Zip # :nodoc:
   module Bzip2
-    class Decompressor < ::Zip::Decompressor #:nodoc:
+    class Decompressor < ::Zip::Decompressor # :nodoc:
       def initialize(*args)
         super
 

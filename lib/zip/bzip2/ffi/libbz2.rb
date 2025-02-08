@@ -34,7 +34,7 @@ module Zip
       # See bzlib.h and http://bzip.org/docs.html.
       #
       # @private
-      module Libbz2 #:nodoc:
+      module Libbz2 # :nodoc:
         extend ::FFI::Library
 
         ffi_lib ['bz2', 'libbz2.so.1', 'libbz2.dll']
@@ -62,7 +62,7 @@ module Zip
         callback :bzfree, %i[pointer pointer], :void
 
         # typedef struct { ... } bz_stream;
-        class BzStream < ::FFI::Struct #:nodoc:
+        class BzStream < ::FFI::Struct # :nodoc:
           layout :next_in,       :pointer,
                  :avail_in,      :uint,
                  :total_in_lo32, :uint,

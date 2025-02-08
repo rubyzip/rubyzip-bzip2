@@ -18,7 +18,7 @@ module Zip
       end
 
       def decompress(data)
-        result = ''.dup
+        result = +''
 
         with_input_buffer(data) do |input_buffer|
           @libbz2.input_buffer = input_buffer

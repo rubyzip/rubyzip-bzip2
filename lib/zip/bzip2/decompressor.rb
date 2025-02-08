@@ -8,11 +8,11 @@ module Zip #:nodoc:
       def initialize(*args)
         super
 
-        @buffer = ''.dup
+        @buffer = +''
         @bzip2_ffi_decompressor = ::Zip::Bzip2::Decompress.new
       end
 
-      def read(length = nil, outbuf = ''.dup)
+      def read(length = nil, outbuf = +'')
         return return_value_on_eof(length) if eof
 
         fill_buffer(length)

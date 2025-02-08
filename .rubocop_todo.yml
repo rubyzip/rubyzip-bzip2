@@ -21,13 +21,6 @@ Layout/LineContinuationSpacing:
   Exclude:
     - 'lib/zip/bzip2/errors.rb'
 
-# Offense count: 3
-# This cop supports unsafe autocorrection (--autocorrect-all).
-Performance/UnfreezeString:
-  Exclude:
-    - 'lib/zip/bzip2/decompress.rb'
-    - 'lib/zip/bzip2/decompressor.rb'
-
 # Offense count: 9
 # This cop supports safe autocorrection (--autocorrect).
 Style/FileRead:

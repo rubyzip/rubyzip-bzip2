@@ -20,7 +20,9 @@ class ZipInputStreamBzip2SupportTest < MiniTest::Test
   end
 
   def test_input_stream_encrypted_read
-    Zip::InputStream.open(BZIP2_ZIP_FILE_ENCRYPTED, 0, Zip::TraditionalDecrypter.new(PASSWORD)) do |zis|
+    decrypter = Zip::TraditionalDecrypter.new(PASSWORD)
+
+    Zip::InputStream.open(BZIP2_ZIP_FILE_ENCRYPTED, decrypter: decrypter) do |zis|
       zis.get_next_entry
       assert_equal file1_text, zis.read
 

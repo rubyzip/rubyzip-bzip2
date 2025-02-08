@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.license = 'BSD 2-Clause'
   spec.require_paths = ['lib']
 
-  spec.required_ruby_version = '>= 2.4'
+  spec.required_ruby_version = '>= 3.0'
 
   spec.files = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
@@ -35,7 +35,7 @@ Gem::Specification.new do |spec|
   }
 
   spec.add_dependency 'ffi', '~> 1.0'
-  spec.add_dependency 'rubyzip', '~> 2.4', '< 3.0'
+  spec.add_dependency 'rubyzip', '~> 3.0.0.rc2'
 
   spec.add_development_dependency 'minitest', '~> 5.15'
   spec.add_development_dependency 'rake', '~> 13.2'

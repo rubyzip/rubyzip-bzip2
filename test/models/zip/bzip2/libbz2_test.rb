@@ -74,10 +74,10 @@ class Libbz2Test < MiniTest::Test
   end
 
   def file_text
-    @file_text ||= File.open(FILE, &:read)
+    @file_text ||= File.read(FILE)
   end
 
   def compressed_data
-    @compressed_data ||= File.open(BZIP2_FILE, 'rb', &:read)
+    @compressed_data ||= File.binread(BZIP2_FILE)
   end
 end

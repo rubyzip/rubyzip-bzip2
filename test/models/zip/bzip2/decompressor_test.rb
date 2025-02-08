@@ -39,6 +39,6 @@ class DecompressorTest < MiniTest::Test
   private
 
   def test_text
-    @test_text ||= File.open(FILE1, &:read)
+    @test_text ||= File.read(FILE1)
   end
 end

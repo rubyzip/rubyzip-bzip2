@@ -17,10 +17,10 @@ class ZipFileBzip2SupportTest < MiniTest::Test
   private
 
   def file1_text
-    @file1_text ||= File.open(FILE1, 'r').read
+    @file1_text ||= File.read(FILE1)
   end
 
   def file2_text
-    @file2_text ||= File.open(FILE2, 'r').read
+    @file2_text ||= File.read(FILE2)
   end
 end

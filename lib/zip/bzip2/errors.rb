@@ -26,7 +26,7 @@ module Zip
       def initialize(message = nil) #:nodoc:
         super(
           message ||
-            'Data integrity error detected (mismatch between stored and computed CRCs, '\
+            'Data integrity error detected (mismatch between stored and computed CRCs, ' \
             'or other anomaly in the compressed data)',
         )
       end

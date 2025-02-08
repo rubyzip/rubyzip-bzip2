@@ -13,14 +13,6 @@ Layout/LeadingCommentSpace:
     - 'lib/zip/bzip2/ffi/libbz2.rb'
     - 'lib/zip/bzip2/libbz2.rb'
 
-# Offense count: 2
-# This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: space, no_space
-Layout/LineContinuationSpacing:
-  Exclude:
-    - 'lib/zip/bzip2/errors.rb'
-
 # Offense count: 9
 # This cop supports safe autocorrection (--autocorrect).
 Style/FileRead:

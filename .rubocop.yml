@@ -1,5 +1,15 @@
+require:
+  - rubocop-performance
+  - rubocop-rake
+
+inherit_from: .rubocop_todo.yml
+
+# Set this to the minimum supported ruby in the gemspec. Otherwise
+# we get errors if our ruby version doesn't match.
 AllCops:
-  TargetRubyVersion: 2.4
+  SuggestExtensions: false
+  TargetRubyVersion: 3.0
+  NewCops: enable
 
 Layout/LineLength:
   Max: 120

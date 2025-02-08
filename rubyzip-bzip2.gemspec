@@ -4,14 +4,14 @@ require_relative 'lib/zip/bzip2/version'
 
 Gem::Specification.new do |spec|
   spec.name = 'rubyzip-bzip2'
-  spec.version = ::Zip::Bzip2::VERSION
+  spec.version = Zip::Bzip2::VERSION
   spec.authors = [
     'Jan-Joost Spanjers', 'Robert Haines'
   ]
 
   spec.summary = 'Extension of rubyzip to read bzip2 compressed files'
   spec.description =
-    'The rubyzip-bzip2 gem provides an extension of the rubyzip gem '\
+    'The rubyzip-bzip2 gem provides an extension of the rubyzip gem ' \
     'for reading zip files compressed with bzip2 compression'
   spec.homepage = 'http://github.com/rubyzip/rubyzip-bzip2'
   spec.license = 'BSD 2-Clause'

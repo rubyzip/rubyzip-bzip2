@@ -2,14 +2,6 @@
 # `rubocop --auto-gen-config`
 # on 2025-02-08 19:37:20 UTC using RuboCop version 1.61.0.
 
-# Offense count: 7
-# Configuration parameters: EnforcedStyle, AllowedGems, Include.
-# SupportedStyles: Gemfile, gems.rb, gemspec
-# Include: **/*.gemspec, **/Gemfile, **/gems.rb
-Gemspec/DevelopmentDependencies:
-  Exclude:
-    - 'rubyzip-bzip2.gemspec'
-
 # Offense count: 11
 # This cop supports safe autocorrection (--autocorrect).
 # Configuration parameters: AllowDoxygenCommentStyle, AllowGemfileRubyComment.
@@ -28,7 +20,6 @@ Layout/LeadingCommentSpace:
 Layout/LineContinuationSpacing:
   Exclude:
     - 'lib/zip/bzip2/errors.rb'
-    - 'rubyzip-bzip2.gemspec'
 
 # Offense count: 3
 # This cop supports unsafe autocorrection (--autocorrect-all).
@@ -53,12 +44,6 @@ Style/FileRead:
 Style/OptionalBooleanParameter:
   Exclude:
     - 'lib/zip/bzip2/libbz2.rb'
-
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-Style/RedundantConstantBase:
-  Exclude:
-    - 'rubyzip-bzip2.gemspec'
 
 # Offense count: 1
 # This cop supports safe autocorrection (--autocorrect).

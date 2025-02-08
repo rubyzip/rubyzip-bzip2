@@ -27,7 +27,7 @@ module Zip
         @stream = FFI::Libbz2::BzStream.new
       end
 
-      def decompress_init!(small = false)
+      def decompress_init!(small: false)
         result = FFI::Libbz2::BZ2_bzDecompressInit(@stream, 0, small ? 1 : 0)
         check_error(result)
 

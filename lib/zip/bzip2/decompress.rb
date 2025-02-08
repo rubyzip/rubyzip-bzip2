@@ -11,7 +11,7 @@ module Zip
         small = options[:small]
 
         @libbz2 = Libbz2.new.tap do |libbz2|
-          libbz2.decompress_init!(small)
+          libbz2.decompress_init!(small: small)
         end
 
         @finished = false

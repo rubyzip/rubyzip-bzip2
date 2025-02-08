@@ -1,3 +1,5 @@
+# 2.0.0 (Next)
+
 # 1.0.0 (2025-02-07)
 
 * Fix automatic require

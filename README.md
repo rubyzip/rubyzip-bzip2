@@ -12,7 +12,14 @@ The rubyzip-bzip2 gem provides an extension of the rubyzip gem for reading zip f
 http://github.com/rubyzip/rubyzip-bzip2
 
 ## Requirements
-- Ruby 2.4 or greater
+
+Version 2.x of this library:
+* Ruby 3.0 or greater
+* Rubyzip 3.0.x
+
+Version 1.x of this library:
+* Ruby 2.4 or greater
+* Rubyzip 2.4.x
 
 ## Installation
 The rubyzip-bzip2 gem is available on RubyGems:

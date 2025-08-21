@@ -2,7 +2,7 @@
 
 require 'test_helper'
 
-class ErrorsTest < MiniTest::Test
+class ErrorsTest < Minitest::Test
   def test_bzip2_error
     assert_raises(Zip::Bzip2::Error) do
       raise ::Zip::Bzip2::Error

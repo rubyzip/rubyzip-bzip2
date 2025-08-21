@@ -35,7 +35,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'ffi', '~> 1.0'
   spec.add_dependency 'rubyzip', '~> 3.0.0'
 
-  spec.add_development_dependency 'minitest', '~> 5.15'
+  spec.add_development_dependency 'minitest', '~> 5.25'
   spec.add_development_dependency 'rake', '~> 13.2'
   spec.add_development_dependency 'rubocop', '~> 1.61.0'
   spec.add_development_dependency 'rubocop-performance', '~> 1.20.0'

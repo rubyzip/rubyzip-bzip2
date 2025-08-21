@@ -2,7 +2,7 @@
 
 require 'test_helper'
 
-class DecompressTest < MiniTest::Test
+class DecompressTest < Minitest::Test
   FILE = 'test/data/file1.txt'
   BZIP2_FILE = 'test/data/file1.txt.bz2'
 

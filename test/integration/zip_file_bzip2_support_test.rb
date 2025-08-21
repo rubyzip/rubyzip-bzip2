@@ -2,7 +2,7 @@
 
 require 'test_helper'
 
-class ZipFileBzip2SupportTest < MiniTest::Test
+class ZipFileBzip2SupportTest < Minitest::Test
   BZIP2_ZIP_FILE = 'test/data/zipWithBzip2Compression.zip'
   FILE1 = 'test/data/file1.txt'
   FILE2 = 'test/data/file2.txt'

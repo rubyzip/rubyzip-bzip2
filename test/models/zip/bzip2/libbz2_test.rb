@@ -2,7 +2,7 @@
 
 require 'test_helper'
 
-class Libbz2Test < MiniTest::Test
+class Libbz2Test < Minitest::Test
   FILE = 'test/data/file1.txt'
   BZIP2_FILE = 'test/data/file1.txt.bz2'
 

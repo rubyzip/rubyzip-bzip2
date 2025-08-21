@@ -1,15 +1,14 @@
 # frozen_string_literal: true
 
 require 'bundler/gem_tasks'
-require 'rake/testtask'
+require 'minitest/test_task'
 require 'rubocop/rake_task'
 
 task default: :test
 
-Rake::TestTask.new(:test) do |t|
-  t.libs << 'test'
-  t.libs << 'lib'
-  t.test_files = FileList['test/**/*_test.rb']
+Minitest::TestTask.create do |test|
+  test.framework = 'require "simplecov"'
+  test.test_globs = 'test/**/*_test.rb'
 end
 
 RuboCop::RakeTask.new

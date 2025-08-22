@@ -1,4 +1,26 @@
-# 2.0.0 (Next)
+# 2.0.0 (2025-08-22)
+
+* Bump version number for RubyZip v3.0 support.
+* Update to use RubyZip ~> 3.0.0.
+* Update README with requirements for version 2.
+
+
+## Tooling and internal changes
+
+* Enable branch coverage analysis.
+* Update Rubocop and add extensions.
+* Prefer `require_relative` where appropriate.
+* Deal with Rubocop offences in gemspec.
+* Fix Style/RedundantReturn Rubocop offences.
+* Fix Style/OptionalBooleanParameter Rubocop offences.
+* Fix Performance/UnfreezeString Rubocop offences.
+* Fix Layout/LineContinuationSpacing Rubocop offences.
+* Fix Style/FileRead Rubocop offences.
+* Fix Layout/LeadingCommentSpace Rubocop offences.
+* Update GitHub Actions to use rubies >= 3.0.
+* Update Minitest and properly use it.
+* Remove use of JRuby object space in tests.
+* Update installation of bzip2 in windows tests.
 
 # 1.0.0 (2025-02-07)
 

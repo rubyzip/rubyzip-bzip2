@@ -4,7 +4,7 @@
 [![Tests](https://github.com/rubyzip/rubyzip-bzip2/actions/workflows/tests.yml/badge.svg)](https://github.com/rubyzip/rubyzip-bzip2/actions/workflows/tests.yml)
 [![Linter](https://github.com/rubyzip/rubyzip-bzip2/actions/workflows/lint.yml/badge.svg)](https://github.com/rubyzip/rubyzip-bzip2/actions/workflows/lint.yml)
 [![Code Climate](https://codeclimate.com/github/rubyzip/rubyzip-bzip2.svg)](https://codeclimate.com/github/rubyzip/rubyzip-bzip2)
-[![Coverage Status](https://img.shields.io/coveralls/rubyzip/rubyzip-bzip2.svg)](https://coveralls.io/r/rubyzip/rubyzip-bzip2?branch=master)
+[![Coverage Status](https://img.shields.io/coveralls/rubyzip/rubyzip-bzip2.svg)](https://coveralls.io/r/rubyzip/rubyzip-bzip2?branch=main)
 
 The rubyzip-bzip2 gem provides an extension of the rubyzip gem for reading zip files compressed with bzip2 compression.
 
@@ -35,7 +35,7 @@ gem 'rubyzip-bzip2'
 ```
 
 ## Usage
-Reading a zip file with bzip2 compression is not different from reading
+Reading a zip file with bzip2 compression is no different from reading
 any other zip file using rubyzip:
 
 ```ruby

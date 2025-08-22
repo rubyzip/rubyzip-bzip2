@@ -30,8 +30,15 @@ jobs:
     - name: Install bzip2 library
       if: matrix.os == 'windows'
       run: |
-        wget https://github.com/philr/bzip2-windows/releases/download/v1.0.8.0/bzip2-dll-1.0.8.0-win-x64.zip
-        Expand-Archive -Path bzip2-dll-1.0.8.0-win-x64.zip -DestinationPath C:\hostedtoolcache\windows\Ruby\${{ matrix.ruby }}\x64\bin
+          Invoke-WebRequest `
+            -Uri https://github.com/philr/bzip2-windows/releases/download/v1.0.8.0/bzip2-dll-1.0.8.0-win-x64.zip `
+            -OutFile bzip2.zip `
+            -MaximumRetryCount 10 `
+            -RetryIntervalSec 2
+          $RubyBinPath = Split-Path (Get-Command ${{ startsWith(matrix.ruby, 'jruby') && 'j' || '' }}ruby.exe).Path
+          Write-Host $RubyBinPath
+          Expand-Archive -Path bzip2.zip -DestinationPath $RubyBinPath -Force
+          Get-Command bzip2.exe | Format-List
 
     - name: Run the tests
       env:

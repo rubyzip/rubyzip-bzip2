@@ -17,3 +17,8 @@ Layout/LineLength:
 
 Metrics/MethodLength:
   Max: 15
+
+# Allow `!` methods in this file to return boolean values.
+Naming/PredicateMethod:
+  Exclude:
+    - 'lib/zip/bzip2/libbz2.rb'

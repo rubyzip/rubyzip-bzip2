@@ -20,11 +20,11 @@ module Zip # :nodoc:
         outbuf.replace(@buffer.slice!(0...(length || @buffer.bytesize)))
       end
 
-      def eof
+      def eof?
         @buffer.empty? && input_finished?
       end
 
-      alias eof? eof
+      alias eof eof?
 
       private
 

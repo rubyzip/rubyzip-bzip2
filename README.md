@@ -15,7 +15,7 @@ http://github.com/rubyzip/rubyzip-bzip2
 
 Version 2.x of this library:
 * Ruby 3.0 or greater
-* Rubyzip 3.0.x
+* Rubyzip 3.0 or greater
 
 Version 1.x of this library:
 * Ruby 2.4 or greater

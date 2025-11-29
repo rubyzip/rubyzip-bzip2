@@ -1,3 +1,12 @@
+# 2.0.1 (2025-11-29)
+
+* Relax rubyzip dependency version constraint.
+
+## Tooling and internal changes
+
+* Update development dependencies to later versions.
+* Fix Naming/PredicateMethod cop.
+
 # 2.0.0 (2025-08-22)
 
 * Bump version number for RubyZip v3.0 support.

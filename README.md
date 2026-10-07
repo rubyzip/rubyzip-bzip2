@@ -60,7 +60,7 @@ You can run the tests with:
 
 ```
 bundle install
-rake
+bundle exec rake
 ```
 
 ## Authors
